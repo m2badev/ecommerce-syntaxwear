@@ -1,0 +1,100 @@
+
+Projeto de Desenvolvimento Web, com HTML + CSS, mas sem JavaScript:
+Preciso criar um site simples usando apenas HTML, CSS, sem usar JS por enquanto.
+Vamos primeiro montar o html e o estilo, depois pense no js.
+Ajude-me a planejar o passo a passo de desenvolvimento, mas não precisa gerar código por enquanto. Neste momento, apenas me ajude a planejar o desenvolvimento.
+Trata-se de um site de e-commerce de sapatos, e vou iniciar fazendo primeiro a pagina inicial.
+Nessa pagina inicial vamos ter as seguintes seções:
+Menu - Painel - Destaque - Grid - Rodapé
+
+0) Preparação do projeto
+Criar repositório (nome do projeto, licença, README inicial) ;
+Definir estrutura de pastas base: /css, /images, /icons, /fonts, /favicons, /docs ;
+Criar arquivos iniciais: index.html, /css/base.css, /css/layout.css ;
+Criar pasta de componentes CSS: /css/components/ ;
+Adicionar .editorconfig e .gitignore (node, imagens brutas, etc.) ;
+Definir paleta e tokens no /css/base.css (cores, tipografia, espaçamentos, radius, sombra) ;
+Preparar placeholders de imagens (logo, banner, 6–12 produtos) ;
+
+1) HTML – esqueleto e landmarks :
+Montar estrutura semântica do index.html: <header>, <nav>, <main>, <footer> ;
+Inserir “skip link” para o <main> ;
+Definir <title>, lang, meta viewport, meta description ;
+Planejar hierarquia de headings (H1 no Destaque; H2 nas demais seções) ;
+Marcar seções: Painel (informativo), Destaque (hero), Grid de Produtos, Newsletter (no footer) ;
+
+2) CSS Global (base) :
+Normalizar estilos (reset/ opiniões leves) em base.css ;
+Declarar variáveis CSS (cores, fontes, espaçamentos, breakpoints) ;
+Tipografia global (body, headings, links, listas, parágrafos) ;
+Utilitários: .container, .stack-*, .cluster, .grid-*, .sr-only ;
+Tabela de breakpoints (sm/md/lg/xl) e helpers de media queries ;
+
+3) CSS de Layout :
+Definir limites de largura e gutters em layout.css ;
+Criar grids base (nº de colunas responsivo) e helpers de alinhamento ;
+Documentar uso de .container, .stack, .cluster no layout.css ;
+
+4) Header/Menu (HTML + CSS do componente) :
+Criar HTML do header: logo, nav principal, ações (login/cadastro) ;
+Criar /css/components/header.css BEM leve (site-header, nav__list, nav__link) ;
+Alinhar com Flex; estados de foco/hover; link ativo ;
+Responsivo: empilhar navegação no mobile (sem JS) ;
+Acessibilidade: <nav> com lista e rótulo claro ;
+
+5) Painel (informativo) :
+HTML da seção Painel (USP: frete, devolução, parcelamento) ;
+/css/components/panel.css (cluster com ícone + texto) ;
+Responsivo: empilhar no mobile e garantir contraste (sem JS) ;
+
+6) Destaque/Hero (banner estático) :
+HTML da seção Destaque com H1, subtítulo, CTA e mídia ;
+/css/components/hero.css (layout com Grid/Flex; sobreposição de texto se necessário) ;
+Definir proporção da mídia e legibilidade do texto (variações claro/escuro) ;
+Responsivo: tipografia e espaçamentos por breakpoint (sem JS) ;
+
+7) Grid de Produtos :
+HTML da grid (lista de produtos) :
+/css/components/product-grid.css (2 col sm, 3 col md, 4 col lg+) ;
+
+HTML do card (imagem, nome, preço, badge opcional) ;
+/css/components/product-card.css (Flex em coluna, gaps; recorte de título em 2 linhas) ;
+Definir razão de aspecto da imagem (1:1 ou 4:5) + contenção ;
+Estados de card (ex.: --sale, --new) ;
+
+8) Footer + Newsletter :
+HTML do footer: institucional, ajuda/FAQ, redes, formas de pagamento, newsletter :
+/css/components/footer.css (Grid 1–2 col mobile, 3–4 col desktop) ;
+/css/components/newsletter.css (label visível, input, submit, hint) :
+Responsivo: newsletter full-width no mobile (sem JS) ;
+
+9) Acessibilidade essencial (passada focada) :
+Verificar único H1; headings em ordem lógica ;
+Alt descritivo em imagens significativas; decorativas com alt="" ;
+Foco visível em todos os links/inputs; não remover outline sem substituto ;
+Contraste AA para texto e botões/links ;
+Tamanho de alvo ~44px para interativos ;
+Labels de formulário e mensagens de ajuda/erro textuais ;
+
+10) Responsividade e ajustes finos (sem JS) :
+Revisar comportamento em sm/md/lg/xl ;
+Ajustar tipografia, espaçamentos e gutters por breakpoint ;
+Testar em navegadores principais (Chrome, Firefox, Safari) e viewports comuns ;
+
+11) Imagens e performance básica :
+Exportar imagens otimizadas (WebP/AVIF quando possível) ;
+Declarar dimensões (largura/altura) para evitar layout shift ;
+Substituir ícones por SVGs quando aplicável ;
+Verificar peso total da página e oportunidades de redução ;
+Revisa a interface criada e tira qualquer sinal de que foi feito por IA: troca o gradiente roxo/azul genérico, se usado, corta o galssmorphism em excesso, tira o neon do texto, troca a fonte padrão, tira emoji da interface se tiver, e ajusta sobra e alinhamento para ter hierarquia real;
+
+12) Organização e manutenção :
+Revisar nomes de classes (BEM leve + utilitários) e remover estilos mortos ;
+Atualizar README com instruções de build/estrutura (mesmo sem bundler) ;
+Documentar tokens e convenções CSS (curto guia no /docs) ;
+
+13) Segurança :
+Sendo o caso nesta implementação, confere a configuração de CORS do sistema e libera só endereços que são realmente da web page ;
+Se necessário nesta implementação, confere se o upload valida o tipo e o tamanho real de cada arquivo, não só pelo nome, e bloqueia qualquer execução ;
+Se necessário nesta implementação, confere se todo webhook da web page valida a assinatura de quem enviou antes de liberar qualquer coisa ;
+

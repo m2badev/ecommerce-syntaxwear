@@ -1,0 +1,24 @@
+
+Aprenda como usar IA para planejar projetos web de forma profissional, criando o SyntaxWear - um e-commerce de calçados moderno.
+
+Aula prática mostrando como transformar um design do Figma em checklist organizado usando ChatGPT, Meta Prompt e ferramentas de produtividade.
+
+Metodologia que acelera desenvolvimento em 10x.
+
+[Links e códigos da aula]
+Projeto:
+Figma SyntaxWear: https://www.figma.com/design/zOjgtKyjjgJnNTiPvATzpK/E-commerce-Allbirds?node-id=0-1&m=dev&t=lNrW6vtYNDxT54pk-1
+
+Ferramentas utilizadas:
+Meta Prompt Lendário: https://chatgpt.com/g/g-2mqMPjvcZ-meta-prompt-lendario
+
+ChatGPT: Para planejamento e checklist
+
+Figma: Análise de design
+Notion/Trello: Organização de tarefas https://trello.com/
+
+Referências externas:
+Figma for Developers: https://www.figma.com/developers
+Prompt Engineering Guide: https://www.promptingguide.ai/
+
+====---====---====---====
