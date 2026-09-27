@@ -3,7 +3,9 @@
     background: url(../../images/banners/hero.jpg) no-repeat center;
     background-size: cover;
     height: 31.25rem;
+    /*width: 78.75rem;*/
     position: relative;
+    
 }
 
 .hero-overlay{
@@ -40,42 +42,4 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-}
-
-.btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.25rem;
-    width: 10.05rem;
-    height: 3rem;
-    border-radius: 1.5rem;
-    color: #ffffff;
-    font-weight: 400;
-    padding: 0.75rem 1.25rem;
-    transition: backgound-color 0.6s, border-color 0.6s;
-}
-
-.btn-outline{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: 0.125rem solid #ffffff;
-    /*line-height: 1.5rem;*/
-}
-
-.btn-filled{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    color: #6329A2;
-    font-weight: 500;
-}
-
-.btn:hover{
-    background-color: #6329A2;
-    color: #ffffff;
-    border-color: #6329A2;
 }
