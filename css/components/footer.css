@@ -1,16 +1,19 @@
 /* footer.css */
 
 .footer {
-  border-radius: 4px;
-	z-index: auto; /*eixo de profundidade*/
+  /*z-index: auto; eixo de profundidade*/
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #5a5956;
-  color: #fff;
+  color: #ffffff;
+  max-width: 1360px;
   font-family: 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-style: italic;
-  margin-bottom: 8px;
-  padding: 4px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.75rem;
+  padding: 0.5rem;  
 }

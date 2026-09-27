@@ -1,7 +1,7 @@
 /* header.css */
 .header {
 	position: fixed;
-	top: 1rem;
+	top: 1.5rem;
 	left: 50%;
 	transform: translate(-50%);
 	width: 78.75rem;
