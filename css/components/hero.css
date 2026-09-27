@@ -2,8 +2,7 @@
 .hero-section{
     background: url(../../images/banners/hero.jpg) no-repeat center;
     background-size: cover;
-
-    height: 500px;
+    height: 31.25rem;
     position: relative;
 }
 
@@ -13,26 +12,22 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 0 6rem;
+    padding: 0 6.75rem;
 }
 
 .hero-content{
     color: #ffffff;
-    max-width: 360px;
+    max-width: 24rem;
     text-align: center;
 }
 
-.hero-buttons{
-    display: flex;
-    gap: 16px;
-}
-
 .hero-content .hero-title{
-    font-size: 1.87rem;
-    margin-bottom: 40px;
+    font-size: 2rem;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
     font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 3px;
+    line-height: 2.25rem;
+    letter-spacing: 0.25rem;
 }
 
 .hero-content .hero-subtitle{
@@ -40,26 +35,43 @@
     font-weight: 400;
 }
 
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.25rem;
-    width: 161px;
-    height: 48px;
-    border-radius: 25px;
+    width: 10.05rem;
+    height: 3rem;
+    border-radius: 1.5rem;
     color: #ffffff;
     font-weight: 400;
-    padding: 10px 20px;
-    transition: backgound-color 0.3s, border 0.3s;
+    padding: 0.75rem 1.25rem;
+    transition: backgound-color 0.6s, border-color 0.6s;
 }
 
 .btn-outline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: transparent;
-    border: 2px solid #ffffff;
-    line-height: 23px;
+    border: 0.125rem solid #ffffff;
+    /*line-height: 1.5rem;*/
 }
 
 .btn-filled{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff;
     color: #6329A2;
+    font-weight: 500;
 }
 
 .btn:hover{

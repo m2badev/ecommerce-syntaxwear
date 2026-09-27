@@ -1,22 +1,23 @@
 /* header.css */
 .header {
 	position: fixed;
-	top: 16px;
+	top: 1rem;
 	left: 50%;
 	transform: translate(-50%);
-	width: 1260px;
-	border-radius: 16px;
+	width: 78.75rem;
+	border-radius: 0.75rem;
 	z-index: 999; /*eixo de profundidade*/
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 4px 8px;
-	background-color: #ffffff;
-	/*background-color: lightskyblue;*/
+	padding: 0.25rem 1rem;
+	/*background-color: #ffffff;*/
+	background-color: lightskyblue;
 }
 
 .logo img {
-	height: 40px;
+	height: 3rem;
+	width: 9.5rem;
 }
 
 .nav-center ul {
@@ -25,13 +26,14 @@
 	align-items: center;
 	width: 100%;
 	flex: 1;
-	margin-left: 4rem;
-	gap: 2.0rem;
+	margin-left: 2rem;
+	gap: 1.5rem;
 }
 
 .nav-center a,
 .nav-right a {
     font-size: 1.25rem;
+	color:#333333;
 }
 
 .nav-center a:hover,
@@ -41,12 +43,12 @@
 .nav-right ul {
 	list-style: none;
     display: flex;
-    gap: 2.5rem;
+    gap: 1.5rem;
     align-items: center;
 }
 
 .nav-right img{
-    height: 20px;
+    height: 1.5rem;
 }
 /*
 .nav-container{
