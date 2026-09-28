@@ -43,3 +43,40 @@
     justify-content: center;
     gap: 1rem;
 }
+
+@media (max-width:48rem){
+    .hero-section{
+        height: 41.25rem;
+        background-image: url(../../images/banners/hero-mobile.jpg);
+        gap: 0.25rem;
+        padding: 0.25rem 0.125rem;
+    }
+
+    .hero-overlay{
+        padding: 0;
+    }
+
+    .hero-content{
+        max-width: 20.625rem;
+        margin: 0 auto;
+    }
+
+    .hero-content .hero-title{
+        font-size: 1.5rem;
+    }
+    
+    .hero-content .hero-subtitle{
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+
+
+
+
+
+
+}

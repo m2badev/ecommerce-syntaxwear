@@ -13,7 +13,13 @@ main{
     padding: 0.8rem 0 0.8rem;
     max-width: 1360px;
     margin: 0 auto;
-    margin-bottom: ;
+    margin-bottom: 0.125rem;
+}
+
+@media (max-width:1280px) {
+    main{
+        padding: 0.5rem;
+    }
 }
 
 .btn{
